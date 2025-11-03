@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Ferrando Pablo</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div id="contenedor">
+    <header>
+        <h1>Ferrando Pablo - Obras Multimediales</h1>
+    </header>
+
+<nav>
+            <div class="navbar">
+                <a href="index.html">El Grupo</a>
+				<a href="ana.html">Ana</a>
+				<a href="#">Pablo</a>
+                <a href="camilo.html">Camilo</a>
+                <a href="lorena.html">Lorena</a>
+                <a href="contacto.html">Contacto</a>
+            </div>               
+		</nav>
+<main>
+    <section class="galeria">
+
+    <div>
+        <img src="img/logo2.png" alt="Logo" class="logo">
+    </div>
+
+        <article>
+            <h3>Acuarela procesadas </h3>
+            <p>El procesamiento de estas acuarelas esta hecho pensando en lo que estamos viendo, en el diseño que proponen los aparatos. Son los que procesan y dan su resultado 
+
+            </p> 
+            Haga click en las miniaturas 
+            <br>
+        </article>
+
+        <!-- MINIATURA 1 - Rompecabezas del pájaro -->
+        <div class="acuarela_miniatura" onclick="abrirSketch('pFerrando_rompecabezas/index.html', 'Deseo vigilado')">
+            <img src="imagen/pájaro.jpg" alt="Rompecabezas Animado">
+            <p>"Deseo vigilado" Acuarela (Fragmentación de la obra)</p>
+        </div>
+
+        <!-- MINIATURA 2 - Acuarela de las grutas -->
+        <div class="acuarela_miniatura" onclick="abrirSketch('Grutas_p5/gruta.html', 'Comunicación de los tiempos')">
+            <img src="Grutas_p5/imagen/Gruta.jpg" alt="Acuarela Cromática">
+            <p>"Comunicación de los tiempos" Acuarela (Al clickear, cambia de color)
+            </p>
+        </div>
+
+        <!-- MINIATURA 3 - Matrix del riachuelo -->
+        <div class="acuarela_miniatura" onclick="abrirSketch('Estudios/Estudios.html', 'Viaje inesperado')">
+            <img src="Estudios/riachuelo.jpg" alt="Matrix Digital">
+            <p>"Viaje inesperado" Acuarela <br>Al clickear dentro de la animación cambia de pantalla y <br> con la letra "q" o "Q" se reproducen sonidos de agua</p>
+        </div>
+
+        <!-- BOTÓN central a la bio (este sigue siendo enlace normal) -->
+        <a href="bio.html" class="acuarela_miniatura">
+            <img src="fPersonal/foto.jpg" alt="auto retrato">
+            <p>Bio del artista
+                <br>
+                <br>
+                <br>
+            </p>
+        </a>
+
+<div class="miniatura" >
+<div class="video_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s2s0xH2CpKk?si=YpJpuV-8diS63jpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R_WIbUK_-gE?si=Yym-5FCrj7UOzBK2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+    
+</main>
+
+<!-- MODAL PARA LOS SKETCHES -->
+<div id="modal-sketch" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar-modal" onclick="cerrarSketch()">&times;</span>
+        <iframe id="sketch-frame" src=""></iframe>
+    </div>
+</div>
+
+<footer class="correo">
+    <address>
+        <p>Correo <a href="mailto:dejoyasferrando@gmail.com" target="_blank">dejoyasferrando@gmail.com</a></p>
+    </address>
+</footer>
+
+</div>
+
+<div>
+    <script src="js/funciones.js"></script> 
+</div>
+
+</body>
+</html>

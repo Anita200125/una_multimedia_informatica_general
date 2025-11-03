@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Artistas Multimediales</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+
+	<body>
+		
+		<header>
+
+			<div class="logo-container">
+                <img src="img/logo2.png" alt="Logo" class="logo">
+                <h1>Somos Artistas Multimediales</h1>
+                
+            </div>
+
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	
+	</header>
+        <br>
+        <br>
+        <hr>
+        <hr>
+		
+		<nav>
+            <div class="navbar">
+
+				<li> <a href="index.html">El Grupo</a></li>
+				
+				<li> <a href="ana.html">Ana</a></li>
+				
+				<li> <a href="pFerrando.html">Pablo</a></li>
+
+				<li> <a href="camilo.html">Camilo</a></li>
+
+				<li> <a href="lorena.html">Lorena</a></li>
+
+                <li> <a href="contacto.html">Contacto</a></li>
+
+            </div>               
+		</nav>
+            
+
+        
+	<main>
+			<article>
+		<h3>Somos Ana, Camilo, Lorena y Pablo, somos artistas multimediales</h3>
+                <br>
+        <p>Este trabajo grupal ha sido diseñado como trabajo final de la materia Artes Multimediales, cátedra Tirigall, Universidad Nacional de las Artes, 2025</p>
+                <br>
+
+                <div class ="columna1"></div>
+				<p>Esta página web recolecta los trabajos realizados en grupo durante la presente cursada, como así también el portfolio de cada uno de nosotros dentro y fuera de nuestra universidad.</p>
+                        <br>	
+                    <br>
+                    <br>
+                </div>        
+
+            </article>		
+
+		<aside>
+
+                
+                <div class ="galeria">
+                    <h3>Galería de Trabajos</h3>
+                    
+                    <br>
+                    <br>
+                    <br>
+                
+                    <div>
+                        <hr>
+                        <h3>Una aventura conversacional</h3>
+                        <br>
+
+                        <p>El/la jugador/a encarna a un/a comandante intergaláctico/a en una misión por explorar el universo. 
+                        Desde una consola de navegación, podrá visitar cuatro mundos únicos con mecánicas, estilos narrativos
+                        y resultados diferentes en cada recorrido:
+                        <br>- 🛰️ Estación espacial Rocco Molopolk: Podés comprar naves, asistir a shows y beber Flacknar... pero cuidado con las consecuencias. 
+                        <br>- ☢️ Planeta Tóxico  : Mundo desértico, tenés que elegir transporte y refugio para sobrevivir al sol.
+                        <br>- 🌀 Planeta Circia  : Nada es lo que parece. Lo simbólico y lo real se mezclan. ¿Podés confiar en tus sentidos?
+                        <br>- 🛁 Planeta Trantor – SPA Galáctico Steampunk: Relax interestelar... si superás un cuestionario secreto.
+                        <br>Cada planeta ofrece decisiones interactivas, múltiples caminos y finales posibles.
+                        
+                        <br>## 🛠️ Tecnologías utilizadas: 
+                        <br>Lenguaje: **C++**
+                        <br>Entorno: GNU/Linux
+                        <br>Entrada/salida: `cin`, `cout`, arte ASCII 
+                        </p>                                 
+                    <div class="video">
+                                
+                            <!-- Miniatura y video-->
+                                <video width="600" height="450" controls class="videosUna">
+                                    <source src="video/aventuraIntergalactica.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <hr>
+                            </div>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Un día como cualquiera</h3>
+                        <br>
+
+                        <p>🎯 Objetivo del juego: Sobrevive moviéndote por la ciudad, esquivando deudas y estatus negativos mientras recolectás premios para activar tu superpoder: ¡disparar!
+                        <br>🔫 Cada disparo que destruye una deuda suma 1 punto.
+                        <br>🏆 Al llegar a 10 puntos, ganás la partida.
+                        <br>Controles:
+
+                        <br>Teclas de acción ← ↑ ↓ → Mover al personaje
+
+                        <br>Tecla espaciadora para disparar (una vez activado el premio)
+                        <br>ESC (tecla 27) Salir del juego
+                        <br>🧍‍♂️ Mecánicas del Jugador
+                        <br>Comenzás con 3 vidas y 10 unidades de energía.
+                        <br>Si una deuda (#DEUDAS) te golpea, perdés 1 vida.
+                        <br>Si tocás un estatus negativo (#ESTATUS), perdés energía.
+                        <br>Al tocar un premio (*), se activa el modo disparo.
+                        <br>Si perdés todas las vidas o energía, el juego termina.
+                        <br>💡 Condiciones de Fin: 
+                        <br>💀 Si tu energía o vidas llegan a 0 → GAME OVER.
+                        <br> 🎉 Si sumás 10 puntos disparando → ¡GANASTE!.
+                        <br>En caso de perder o ganar la consola pregunta si se quiere seguir jugando o salir (s/n) "s" para seguir jugando "n" para salir
+                        <br>📦 Estructura del proyecto
+                        <br>main.cpp → Lógica principal y bucle del juego.  
+                        <br>Jugador.h/.cpp → Control del jugador, movimiento, estado y disparos.  
+                        <br>Disparo.h/.cpp → Gestión de proyectiles.
+                        <br>Deuda.h/.cpp → Enemigos que restan vidas.
+                        <br>Estatus.h/.cpp → Enemigos que restan energía.
+                        <br>Mapa.h/.cpp → Renderizado y manejo del mapa ASCII.
+                        <br>Constantes.h → Configuraciones globales.
+                        </p>
+
+
+                            <div class="video">
+                                
+                                <!-- Miniatura y video-->
+                                <video width="600" height="450" controls>
+                                    <source src="video/unDiaComoCualquiera.mp4" type="video/mp4">
+                                    Tu navegador no soporta la etiqueta de video.
+                                </video>
+                                <hr>
+                            </div>
+            </div>                                               
+    </div>
+            </aside>		    
+		
+		
+	</main>
+        <hr>
+        <hr>
+				
+	<footer>
+			<br>
+			<h2>Si querés conocer nuestra universidad, te invitamos a hacer link aquí: <a href="https://www.una.edu.ar/" target= "_blank"> Link a la UNA </a>
+	</footer>
+	
+			<div>
+			<script src="js/funciones.js"></script> 
+			
+
+
+            </div>
+		
+	</body>
+</html>
+
+
