@@ -3,7 +3,7 @@ let colorShift = 0;
 let isGlitching = false;
 
 function preload() {
-  img = loadImage("imagen/Gruta.jpg",
+  img = loadImage("imagen/gruta.jpg",
     () => console.log("Imagen cargada correctamente"),
     () => console.error("Error: no se pudo cargar la imagen")
   );
