@@ -8,8 +8,8 @@ images.forEach(img => {
     img.dataset.originalWidth = img.offsetWidth;
     img.dataset.originalHeight = img.offsetHeight;
     // Calculamos el nuevo tamaño (250%)
-    const newWidth = img.offsetWidth * 2.5;
-    const newHeight = img.offsetHeight * 2.5;
+    const newWidth = img.offsetWidth * 1.1;
+    const newHeight = img.offsetHeight * 1.1;
     // Aplicamos el tamaño aumentado
     img.style.width = newWidth + 'px';
     img.style.height = newHeight + 'px';
