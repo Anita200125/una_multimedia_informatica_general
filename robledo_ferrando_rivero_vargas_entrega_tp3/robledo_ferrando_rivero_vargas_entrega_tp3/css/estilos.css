@@ -4,11 +4,19 @@
     margin: 0;
     padding: 0;
 }
+/* FUENTES LOCALES - CORREGIDO */
 @font-face {
-  font-family: 'Abel-Pro';
-  src: url('./font/Abel-Pro.woff') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Abel';
+    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 /* Cuerpo y contenedores */
@@ -325,6 +333,9 @@ footer {
 }
 
 
+h1, h2, h3, .navbar, p, li {
+    font-family: 'Abel', sans-serif; /* Asegurar que use la fuente local */
+}
 
 
 /* Estilo para los inputs y textarea */
