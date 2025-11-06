@@ -1,3 +1,20 @@
+
+
+/* ===== FUENTES LOCALES - AGREGAR AL INICIO DEL CSS ===== */
+@font-face {
+    font-family: 'Abel';
+    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #1a1a1a;
@@ -128,6 +145,25 @@ header h1 {
   display: block;
   margin-top: 0.5rem;
   font-size: 1.1rem;
+}
+
+/* ===== ESTILOS DE FUENTE ESTANDARIZADOS ===== */
+header h1 {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+.navbar {
+    font-family: 'Abel', sans-serif;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
 }
 
 /* Galería */
