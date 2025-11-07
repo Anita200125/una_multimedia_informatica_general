@@ -1,10 +1,7 @@
-
-
-/* ===== FUENTES LOCALES - AGREGAR AL INICIO DEL CSS ===== */
-/* ===== CORREGIR EN TU styles.css ===== */
+/* ===== FUENTES LOCALES ===== */
 @font-face {
     font-family: 'Abel';
-    src: url('font/Abel-Pro.otf') format('opentype'); /* Ruta corregida */
+    src: url('font/Abel-Pro.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +14,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Abel', sans-serif;
   background: #1a1a1a;
   color: white;
   margin: 0;
@@ -28,7 +25,7 @@ body {
 #contenedor {
   background-color: black;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -39,6 +36,7 @@ header {
   text-align: center;
   padding: 2rem;
   background: #262644;
+  width: 100%;
 }
 
 header h1 {
@@ -48,39 +46,35 @@ header h1 {
 
 /* Navegación */
 .navbar {
-  background-color: none;
+  background-color: transparent;
   font-size: 2em;
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(40, 131, 215, 0.1); /* Sombra suave para estética */
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(195, 211, 226, 0.1);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+  height: 60px;
+  max-width: 1160px;
+  margin: 0 auto;
   font-family: 'Abel';
 }
 
-/* Estilo para los enlaces o botones dentro de la navbar */
 .navbar a {
   text-decoration: none;
-  font-weight: 600;  
-  color: #5294db; /* Color del texto */
-  margin: 10;
-  padding: 18px 12px;
-  border-radius: 8px; /* Bordes redondeados en los enlaces */
+  font-weight: 600;
+  color: #5294db;
+  padding: 10px 15px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #5294db; /* Color del texto */
-  margin: 0 10px;
-  padding: 8px 12px;
-  border-radius: 8px; /* Bordes redondeados en los enlaces */
-  transition: background-color 0.3s ease;
+.navbar a:hover {
+  background-color: rgba(196, 203, 212, 0.2);
 }
-
 .navbar a:hover {
   background-color: #dbe1e9; /* Fondo suave al pasar el ratón */
 }
