@@ -7,23 +7,23 @@
 /* FUENTES LOCALES - CORREGIDO */
 @font-face {
     font-family: 'Abel';
-    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    src: url('font/Abel-Pro.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Abel';
-    src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
+    src: url('font/Abel-Pro-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
+
 /* Cuerpo y contenedores */
 
 body {
-    /*font-family: 'Abel-Pro', sans-serif;*/
-    font-family: 'Abel-Pro', sans-serif;
+    font-family: 'Abel', sans-serif;
     width: 100%;
     background:  url("../img/fondo.png");
     display:flow-root;
@@ -35,14 +35,14 @@ body {
 #contenedor {
   background-color: black;
   width: 100%;
-  max-width: 1200px;    /* ← ESTO FALTA EN EL INDEX */
-  margin: 0 auto;       /* ← ESTO FALTA EN EL INDEX */
+  max-width: 1200px;   
+  margin: 0 auto;       
   text-align: center;
   display: block;
 }
 
 .contacto{
-    background-color: rgb(32, 31, 76);
+  background-color: rgb(32, 31, 76);
   width: 100%;
   max-width: 1200px;    
   margin: 0 auto;       
@@ -98,6 +98,7 @@ header {
 /* Estilo para los enlaces o botones dentro de la navbar */
 .navbar a {
   text-decoration: none;
+  font-weight: 600; 
   color: #5294db; /* Color del texto */
   margin: 0 10px;
   padding: 8px 12px;
@@ -152,7 +153,7 @@ section {
     position:relative;
     justify-content:space-around;
     text-align:inherit;
-    font-size:1em;
+    font-size:2em;
     padding: 0;
     margin:0;
 }
