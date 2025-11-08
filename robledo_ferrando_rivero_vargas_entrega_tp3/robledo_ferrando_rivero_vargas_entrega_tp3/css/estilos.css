@@ -71,6 +71,7 @@ header {
 /* Estilo para la barra de navegación */
 .navbar {
   background-color: none;
+  font-size: 2em;
   padding: 10px 20px; /* Espaciado interno */
   border-radius: 15px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para estética */
