@@ -32,11 +32,23 @@ body {
     margin:0;
  }
 
-#contenedor{
-    width:100%
+#contenedor {
+  background-color: black;
+  width: 100%;
+  max-width: 1200px;    /* ← ESTO FALTA EN EL INDEX */
+  margin: 0 auto;       /* ← ESTO FALTA EN EL INDEX */
+  text-align: center;
+  display: block;
 }
 
-
+.contacto{
+    background-color: rgb(32, 31, 76);
+  width: 100%;
+  max-width: 1200px;    
+  margin: 0 auto;       
+  text-align: center;
+  display: block;
+}
 
 
 /* Encabezado, nav y main */
@@ -74,7 +86,7 @@ header {
   font-size: 2em;
   padding: 10px 20px; /* Espaciado interno */
   border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para estética */
+  box-shadow: 0 4px 8px rgba(203, 214, 219, 0.69); /* Sombra suave para estética */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -94,7 +106,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #030e1d; /* Fondo suave al pasar el ratón */
+  background-color: #214f90; /* Fondo suave al pasar el ratón */
 }
 
 .navbar li {
