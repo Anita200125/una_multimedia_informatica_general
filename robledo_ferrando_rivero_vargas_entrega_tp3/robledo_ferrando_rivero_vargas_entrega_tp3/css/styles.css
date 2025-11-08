@@ -74,20 +74,6 @@ header h1 {
   white-space: nowrap;
 }
 
-.navbar a:hover {
-  background-color: rgba(196, 203, 212, 0.2);
-}
-.navbar a:hover {
-  background-color: #dbe1e9; /* Fondo suave al pasar el ratón */
-}
-
-.navbar a {
-  list-style: none;
-  margin: 5px 10px;
-
-}
-
- 
 .enlase{
   text-decoration: none;
   color: #1a191a;
@@ -381,3 +367,102 @@ p {
     height: 70vh;
     }
   }
+
+  @media (max-width: 768px) {
+  
+  /* HEADER Y TÍTULO */
+  header {
+    max-width: 100% !important;
+    padding: 1rem !important;
+  }
+  
+  header h1 {
+    font-size: 1.5rem !important;
+    padding: 0.5em !important;
+  }
+  
+  /* NAVBAR RESPONSIVE */
+  .navbar {
+    font-size: 1em !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 15px 10px !important;
+    height: auto !important;
+    max-width: 95% !important;
+    margin: 10px auto !important;
+  }
+  
+  .navbar a {
+    padding: 12px 15px !important;
+    margin: 2px 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 1.1em !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+  }
+  
+  /* IMÁGENES RESPONSIVE */
+  .acuarela_miniatura {
+    margin: 1rem auto !important;
+    width: 90% !important;
+  }
+  
+  .acuarela_miniatura img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 5/4 !important;
+  }
+  
+  /* VIDEOS RESPONSIVE */
+  .video_container {
+    width: 95% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  .video_container iframe,
+  .miniatura iframe {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  
+  .miniatura {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  /* TEXTO RESPONSIVE */
+  .letras {
+    width: 95% !important;
+    min-height: auto !important;
+    padding: 1.5rem !important;
+    margin: 1rem auto !important;
+    font-size: 1rem !important;
+  }
+  
+  h3 {
+    font-size: 1.3rem !important;
+    padding: 0.5em !important;
+    margin: 0.5em 0 !important;
+    text-align: center !important;
+  }
+  
+  p {
+    font-size: 1rem !important;
+    padding: 0.5em !important;
+    text-align: left !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* MODAL RESPONSIVE */
+  #sketch-frame {
+    width: 95vw !important;
+    height: 50vh !important;
+  }
+  
+  .modal-contenido {
+    padding: 15px !important;
+    margin: 10px !important;
+  }
+}
