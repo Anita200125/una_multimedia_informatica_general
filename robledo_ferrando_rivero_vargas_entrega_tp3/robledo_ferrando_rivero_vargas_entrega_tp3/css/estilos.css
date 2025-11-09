@@ -261,6 +261,57 @@ footer {
     margin: 0;
 }
 
+/* ===== GALERÍAS ESPECÍFICAS POR ARTISTA ===== */
+
+/* Ana Robledo - Estilo suave y femenino */
+.galeria-ana {
+    border-left: 4px solid #ff6b6b;
+    background: rgba(14, 27, 54, 0.95);
+}
+
+.galeria-ana h3 {
+    color: #7ef4e8;
+    border-color: #8efff0;
+}
+
+
+
+/* Camilo Vargas - Estilo tecnológico y moderno */
+.galeria-camilo {
+    border-left: 4px solid #4ecdc4;
+    background: rgba(14, 27, 54, 0.95);
+}
+
+.galeria-camilo h3 {
+    color: #4ecdc4;
+    border-color: #4ecdc4;
+}
+
+
+/* Lorena Rivero - Estilo artístico y orgánico */
+.galeria-lorena {
+    border-left: 4px solid #45b7d1;
+    background: rgba(14, 27, 54, 0.95);
+}
+
+.galeria-lorena h3 {
+    color: #45b7d1;
+    border-color: #45b7d1;
+}
+
+/* Grupo - Estilo colaborativo */
+.galeria-grupo {
+    border-left: 4px solid #ffeaa7;
+    background: rgba(14, 27, 54, 0.95);
+}
+
+.galeria-grupo h3 {
+    color: #ffeaa7;
+    border-color: #ffeaa7;
+}
+
+
+
 /* Media queries para ajustar en pantallas pequeñas */
 @media (max-width: 768px) {
   .navbar {
