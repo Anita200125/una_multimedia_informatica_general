@@ -1,78 +1,36 @@
-// Seleccionamos todas las imágenes con la clase 'img-agrandable'
-const images = document.querySelectorAll('.img-agrandable');
+// GALERÍA MODAL - SOLO ESTE CÓDIGO
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener el modal
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("img01");
+    const pieText = document.getElementById("pie");
+    const spanCerrar = document.getElementsByClassName("cerrar")[0];
 
-images.forEach(img => {
-  // Cuando el mouse entra en la imagen
-  img.addEventListener('mouseenter', () => {
-    // Guardamos el tamaño original para poder restaurarlo
-    img.dataset.originalWidth = img.offsetWidth;
-    img.dataset.originalHeight = img.offsetHeight;
-    // Calculamos el nuevo tamaño (250%)
-    const newWidth = img.offsetWidth * 1.2;
-    const newHeight = img.offsetHeight * 1.2;
-    // Aplicamos el tamaño aumentado
-    img.style.width = newWidth + 'px';
-    img.style.height = newHeight + 'px';
-    // Opcional: cambiar cursor para indicar que se puede hacer clic
-    img.style.cursor = 'zoom-out';
-  });
+    // Para cada imagen con la clase 'img-agrandable'
+    const images = document.querySelectorAll('.img-agrandable');
+    
+    images.forEach(function(img) {
+        // Al hacer clic en cualquier imagen
+        img.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            pieText.innerHTML = this.alt; // Usa el texto alt como descripción
+        });
+    });
 
-  // Cuando el mouse sale de la imagen
-  img.addEventListener('mouseleave', () => {
-    // Restauramos el tamaño original
-    if (img.dataset.originalWidth && img.dataset.originalHeight) {
-      img.style.width = img.dataset.originalWidth + 'px';
-      img.style.height = img.dataset.originalHeight + 'px';
+    // Cerrar modal al hacer clic en la X
+    spanCerrar.onclick = function() {
+        modal.style.display = "none";
     }
-    // Restaurar cursor
-    img.style.cursor = 'default';
-  });
+
+    // Cerrar modal al hacer clic fuera de la imagen
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
 
-
-// esto funciona
-// Función para ajustar las imágenes
-function ajustarFotos() {
-  const fotos = document.querySelectorAll('img.fotos');
-
-  // Obtener el ancho total de la pantalla
-  const anchoPantalla = window.innerWidth;
-
-  // Número de imágenes
-  const numFotos = fotos.length;
-
-  if (numFotos === 0) return;
-
-  // Calcula el espacio total disponible y el tamaño de cada imagen
-  // ajusta ancho de cada imagen para que todas quepan en línea y con espacios iguales
-  const espacioEntreFotos = 10; // espacio en píxeles entre fotos (puedes ajustarlo)
-  
-  // Calcula la ancho total de los espacios entre las fotos
-  const totalEspacios = (numFotos - 1) * espacioEntreFotos;
-
-  // Calcula la ancho total disponible para las fotos
-  const anchoDisponible = anchoPantalla - totalEspacios;
-
-  // Calcula la ancho individual de cada foto
-  const anchoFoto = anchoDisponible / numFotos;
-
-  // Aplicar los estilos
-  fotos.forEach(foto => {
-    foto.style.display = 'inline-block';
-    foto.style.width = `${anchoFoto}px`;
-    foto.style.height = 'auto'; // Mantiene proporción
-    foto.style.marginRight = `${espacioEntreFotos}px`;
-  });
-
-  // Quitar el margen derecho del último
-  if (fotos.length > 0) {
-    fotos[fotos.length - 1].style.marginRight = '0';
-  }
-}
-
-// Ejecutar la función al cargar y al redimensionar la ventana
-window.addEventListener('load', ajustarFotos);
-window.addEventListener('resize', ajustarFotos);
 
 
 
