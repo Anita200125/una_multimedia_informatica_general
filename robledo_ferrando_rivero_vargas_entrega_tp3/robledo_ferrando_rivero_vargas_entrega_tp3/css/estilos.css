@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
 }
-/* FUENTES LOCALES - CORREGIDO */
+
+/* FUENTES LOCALES */
 @font-face {
     font-family: 'Abel';
     src: url('../css/font/Abel-Pro-Bold.otf') format('opentype');
@@ -18,117 +19,208 @@
     font-style: normal;
 }
 
-/* Cuerpo y contenedores */
-
+/* CUERPO Y CONTENEDORES */
 body {
-    /*font-family: 'Abel-Pro', sans-serif;*/
-    font-family: 'Abel-Pro', sans-serif;
+    font-family: 'Abel', sans-serif;
     width: 100%;
-    background:  url("../img/fondo.png");
-    display:flow-root;
-    justify-content: space-around;
-    padding:10px;
-    margin:0;
- }
+    background: url("../img/fondo.png");
+    padding: 10px;
+    margin: 0;
+}
 
 #contenedor {
-  background-color: black;
-  width: 100%;
-  max-width: 1200px;    /* ← ESTO FALTA EN EL INDEX */
-  margin: 0 auto;       /* ← ESTO FALTA EN EL INDEX */
-  text-align: center;
-  display: block;
+    background-color: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.contacto{
+.contacto {
     background-color: rgb(32, 31, 76);
-  width: 100%;
-  max-width: 1200px;    
-  margin: 0 auto;       
-  text-align: center;
-  display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+/* ===== LAYOUT TEXTO A LA IZQUIERDA, MEDIA A LA DERECHA ===== */
+.contenedor-mixto {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    align-items: flex-start;
+    gap: 2rem !important;
+}
 
-/* Encabezado, nav y main */
+.texto-content {
+    flex: 2;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #5294db;
+}
+
+.media-content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem !important;
+    padding-left: 2rem !important;
+    align-items: flex-end !important;
+    position: relative;
+    top: 3rem;      /* Baja la imagen */
+    right: 4rem;     /* Mueve a la derecha */
+    margin: 0;      /* Resetea márgenes */
+}
+
+/* Para páginas de artistas (imagen a la derecha) */
+.layout-artista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 2rem 0;
+    align-items: flex-start;
+}
+
+.bio-artista {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.foto-artista {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Para el index (video a la derecha) */
+.layout-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 2rem 0;
+    align-items: flex-start;
+}
+
+.descripcion-grupo {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* MEJORA DE LEGIBILIDAD DEL TEXTO */
+.texto-content p,
+.bio-artista p,
+.descripcion-grupo p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #e8d5d5;
+}
+
+.texto-content ul,
+.bio-artista ul {
+    text-align: left;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.texto-content li,
+.bio-artista li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.texto-content h3,
+.bio-artista h2,
+.descripcion-grupo h2 {
+    color: #5294db;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #5294db;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* ENCABEZADO, NAV Y MAIN */
 header, nav, main, footer {
-  width: 100%;
-  padding: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 header {
-    /*background-color: rgb(68, 115, 163);*/
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     text-align: center;
     border-right: 2px solid gray;
-    border-bottom: 2px solid gray; 
-    flex-wrap: wrap; /*modif*/
+    border-bottom: 2px solid gray;
+    flex-wrap: wrap;
     padding: 0.2em;
-    margin:0;
+    margin: 0;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-  width: 200px; /* ajusta el tamaño */
-  height: auto;
-  margin-right: 10px; /* espacio entre logo y texto */
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
 }
 
-/* Estilo para la barra de navegación */
+/* BARRA DE NAVEGACIÓN */
 .navbar {
-  background-color: none;
-  font-size: 2em;
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(203, 214, 219, 0.69); /* Sombra suave para estética */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Abel';
+    background-color: rgba(16, 19, 26, 0.95);
+    font-size: 2em;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+    border-radius: 0 0 15px 15px;
 }
 
-/* Estilo para los enlaces o botones dentro de la navbar */
 .navbar a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #5294db; /* Color del texto */
-  margin: 0 10px;
-  padding: 8px 12px;
-  border-radius: 8px; /* Bordes redondeados en los enlaces */
-  transition: background-color 0.3s ease;
-  list-style: none;
-  margin: 5px 10px;
-  white-space: nowrap;
+    text-decoration: none;
+    font-weight: 600;
+    color: #5294db;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
-  background-color: #214f90; /* Fondo suave al pasar el ratón */
+    background-color: #214f90;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .navbar li {
-  list-style: none;
-  margin: 5px 10px;
+    list-style: none;
+    margin: 5px 10px;
 }
 
-
-.columna {
-    display:flex; 
-    width:80%;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-
+/* GALERÍA */
 .galeria {
-    background-color:rgb(14, 27, 54);
+    background-color: rgb(14, 27, 54);
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -138,63 +230,57 @@ header {
 }
 
 .descripcion {
-  transition: transform 0.3s ease;
-  display: inline-block; /* para que la transformación funcione bien */
-}
-.descripcion.aumentada {
-  transform: scale(2); /* aumenta un 100%, es decir, 2 veces el tamaño */
+    transition: transform 0.3s ease;
+    display: inline-block;
 }
 
 section {
     background-color: rgb(15, 44, 103);
-    width:100%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    position:relative;
-    justify-content:space-around;
-    text-align:inherit;
-    font-size:1em;
+    position: relative;
+    justify-content: space-around;
+    text-align: inherit;
+    font-size: 1em;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-
-
+/* TIPOGRAFÍA */
 h1 {
-    font-family:Abel; 
+    font-family: Abel;
     color: blanchedalmond;
-    font-weight:bold;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
     position: relative;
     margin: 0;
-    padding:1em;
+    padding: 1em;
 }
 
 h2 {
-    font-family:Abel;
+    font-family: Abel;
     color: blanchedalmond;
-    font-weight:bold;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-content: space-around;
     position: relative;
     margin: 0;
-    padding:1em;
-    
-    
+    padding: 1em;
 }
 
 h3 {
     font-family: Abel;
     color: blanchedalmond;
-    font-weight:bold;
+    font-weight: bold;
     border-right: 2px solid gray;
-    border-bottom: 2px solid gray; 
+    border-bottom: 2px solid gray;
     text-align: justify;
     display: flex;
     justify-content: space-around;
@@ -202,21 +288,17 @@ h3 {
     text-align: center;
     position: relative;
     margin: 0;
-    padding:1em;
-    
+    padding: 1em;
 }
-/*        */
-
 
 p {
     font-family: Abel;
     color: aliceblue;
-    font-size:3vh;
-    text-align:center;
-    justify-content: space-around;
-    /*background:5em;*/
-    padding:1em;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 1em;
     margin: auto;
+    line-height: 1.6;
 }
 
 img {
@@ -225,36 +307,53 @@ img {
     align-items: center;
     flex-wrap: wrap;
 }
-/* Diseño de columnas y artículos */
+
+.img-agradable{
+    margin-left: 10px;
+}
+
+/* ARTÍCULOS Y ASIDE */
 article, aside {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #descripcion {
-    font-size: o,5px;
+    font-size: 0.5px;
     max-width: 50%;
     color: bisque;
     text-align: center;
     flex-wrap: wrap;
 }
 
+/* VIDEOS RESPONSIVE */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    aspect-ratio: 16/9;
+}
 
-iframe {
-    justify-content: center;
-    align-items: center;
-    width:450px;
-    height:300px;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 
+/* FOOTER */
 footer {
     width: 100%;
     font-family: Abel;
     font-size: 0.6em;
     background: rgb(78, 176, 225);
-    width: 100%;
     color: rgb(87, 138, 202);
-    display:inline-flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     padding: 1em;
@@ -262,8 +361,6 @@ footer {
 }
 
 /* ===== GALERÍAS ESPECÍFICAS POR ARTISTA ===== */
-
-/* Ana Robledo - Estilo suave y femenino */
 .galeria-ana {
     border-left: 4px solid #580353;
     background: rgba(14, 27, 54, 0.95);
@@ -274,9 +371,6 @@ footer {
     border-color: #8efff0;
 }
 
-
-
-/* Camilo Vargas - Estilo tecnológico y moderno */
 .galeria-camilo {
     border-left: 4px solid #4ecdc4;
     background: rgba(14, 27, 54, 0.95);
@@ -287,8 +381,6 @@ footer {
     border-color: #4ecdc4;
 }
 
-
-/* Lorena Rivero - Estilo artístico y orgánico */
 .galeria-lorena {
     border-left: 4px solid #45b7d1;
     background: rgba(14, 27, 54, 0.95);
@@ -299,7 +391,6 @@ footer {
     border-color: #45b7d1;
 }
 
-/* Grupo - Estilo colaborativo */
 .galeria-grupo {
     border-left: 4px solid #ffeaa7;
     background: rgba(14, 27, 54, 0.95);
@@ -366,174 +457,141 @@ footer {
     to { opacity: 1; }
 }
 
-
-
-/* Media queries para ajustar en pantallas pequeñas */
-@media (max-width: 768px) {
-  .navbar {
-    font-size: 1em;
-    flex-direction: column;
-    gap: 8px;
-    padding: 15px 10px;
-    height: auto;
-    max-width: 95%; /* No tan ancho en móvil */
-    margin: 10px auto; /* Menos margen */
-  }
-  
-  .navbar a {
-    padding: 12px 15px;
-    margin: 2px 0;
-    width: 100%; /* Botones de ancho completo */
-    text-align: center;
-    font-size: 1.1em; /* Un poco más grande para tactil */
-    border: 1px solid rgba(255,255,255,0.1); /* Borde sutil */
-  }
-  
-  .navbar a:hover {
-    background-color: rgba(82, 148, 219, 0.3); /* Efecto más suave */
-    transform: scale(1.02); /* Pequeño efecto táctil */
-  }
-}
-
-/* Estilo para el contenedor del formulario */
+/* FORMULARIO */
 .form-container {
-  max-width: 500px; /* Ancho máximo para que no sea muy ancho */
-  margin: 50px auto; /* Centrado en la página con espacio superior e inferior */
-  padding: 30px; /* Espacio interno para que el contenido no toque los bordes */
-  background-color: #f9f9f9; /* Color de fondo suave */
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el título */
 .form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-
-h1, h2, h3, .navbar, p, li {
-    font-family: 'Abel', sans-serif; /* Asegurar que use la fuente local */
-}
-
-
-/* Estilo para los inputs y textarea */
 #contactForm input[type="text"],
 #contactForm input[type="email"],
 #contactForm input[type="tel"],
 #contactForm textarea {
-  width: 100%; /* Que ocupe todo el ancho del contenedor */
-  padding: 12px 15px; /* Espacio interno para mayor comodidad */
-  margin-bottom: 15px; /* Espacio entre campos */
-  border: 1px solid #ccc; /* Borde gris suave */
-  border-radius: 5px; /* Esquinas redondeadas */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  box-sizing: border-box; /* Para que padding y border no afecten el tamaño total */
-  transition: border-color 0.3s;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 
-/* Cambio de color al enfocar */
 #contactForm input[type="text"]:focus,
 #contactForm input[type="email"]:focus,
 #contactForm input[type="tel"]:focus,
 #contactForm textarea:focus {
-  border-color: #007BFF;
-  outline: none;
+    border-color: #007BFF;
+    outline: none;
 }
 
-/* Estilo para el botón */
 #contactForm input[type="submit"] {
-  width: 100%;
-  padding: 12px 15px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #contactForm input[type="submit"]:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
+
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  
-  /* NAVBAR - RESET COMPLETO */
-  .navbar {
-    font-size: 1em !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-    padding: 15px 10px !important;
-    height: auto !important;
-    max-width: 95% !important;
-    margin: 10px auto !important;
-  }
-  
-  .navbar a {
-    padding: 12px 15px !important;
-    margin: 2px 0 !important;
-    width: 100% !important;
-    text-align: center !important;
-    font-size: 1.1em !important;
-    border: 1px solid rgba(255,255,255,0.1) !important;
-  }
-  
-  /* LOGO - TAMAÑO CONSISTENTE */
-  .logo {
-    max-width: 150px !important;
-    height: auto !important;
-  }
-  
-  .logo-container {
-    flex-direction: column !important;
-    text-align: center !important;
-  }
-  
-  /* TEXTO - MEJOR LEGIBILIDAD */
-  h1, h2, h3 {
-    text-align: center !important;
-    padding: 0.5em !important;
-    margin: 0.5em 0 !important;
-  }
-  
-  h1 { font-size: 1.8rem !important; }
-  h2 { font-size: 1.5rem !important; }
-  h3 { font-size: 1.3rem !important; }
-  
-  p {
-    text-align: left !important;
-    padding: 0.5em !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    white-space: normal !important;
-  }
-  
-  /* VIDEOS - RESPONSIVE COMPLETO */
-  iframe, .video_container iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 200px !important;
-  }
-  
-  .video_container {
-    width: 95% !important;
-    margin: 0 auto !important;
-  }
-  
-  /* IMÁGENES - FLEXIBLES */
-  .acuarela_miniatura img {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
-  .acuarela_miniatura {
-    margin: 1rem auto !important;
-    width: 90% !important;
-  }
+    .contenedor-mixto,
+    .layout-artista,
+    .layout-index {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .texto-content,
+    .bio-artista,
+    .descripcion-grupo {
+        padding: 1.5rem;
+        min-width: 100%;
+    }
+    
+    .media-content {
+        min-width: 100%;
+    }
+    
+    .navbar {
+        font-size: 1em;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 10px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+    
+    .navbar a {
+        padding: 12px 15px;
+        margin: 2px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1em;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1, h2, h3 {
+        text-align: center;
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
+    
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    
+    p {
+        text-align: left;
+        padding: 0.5em;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    iframe, .video_container iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .video_container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .video-container {
+        margin: 1rem auto;
+        max-width: 95%;
+    }
 }
