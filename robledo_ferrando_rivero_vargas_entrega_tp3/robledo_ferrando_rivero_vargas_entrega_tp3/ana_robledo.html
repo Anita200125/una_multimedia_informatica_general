@@ -44,93 +44,62 @@
             <br>
             <br>
             <br>
+<main>
+    <!-- LAYOUT PARA LA DESCRIPCIÓN PRINCIPAL -->
+    <div class="layout-artista">
+        <div class="bio-artista">
+            <h2>Portfolio de trabajos hechos dentro y fuera de la UNA</h2>
+            <p>Ana Robledo, estudiante de Artes Multimediales en la UNA, con formación en Diseño Gráfico en Da Vinci, Filmmaking y en Atelier Audiovisual.
+            Se desempeña como directora de arte en cortometrajes, construyendo la estética visual y las atmósferas que acompañan cada historia.
+            También realiza ilustraciones. Gran parte de su inspiración surge de canciones que la transportan y la impulsan a crear.</p>
+        </div>
+        
+        <div class="media-content">
+            <img src="img/Trabajo practico 3 -Ana colorizacion.png" alt="Póster DG - Ana Robledo" class="foto-artista img-agrandable">
+        </div>
+    </div>
 
-        <main>
+    <aside class="galeria galeria-ana">
+        <h3>Galería de Trabajos</h3>
+        
+        <!-- EJEMPLO: TEXTO IZQUIERDA, IMAGEN DERECHA -->
+        <div class="contenedor-mixto">
+            <div class="texto-content">
+                <h3>Póster DG</h3>
+                <p>Trabajo de diseño gráfico realizado para la materia X. Enfocado en la composición tipográfica y el balance visual.</p>
+            </div>
+            <div class="media-content">
+                <img src="img/posterDG.png" alt="poster DG" class="img-agrandable">
+            </div>
+        </div>
 
-            <article>
-                
-                <div>
-		<h2 class="columna1"> portfolio de trabajos hechos dentro y fuera de la UNA.</h2>
-                    <br>
-                <p> Ana Robledo, estudiante de Artes Multimediales en la UNA, con formación en Diseño Gráfico en Da Vinci, Filmmaking y en Atelier Audiovisual.
-                    Se desempeña como directora de arte en cortometrajes, construyendo la estética visual y las atmósferas que acompañan cada historia.
-                    También realiza ilustraciones. Gran parte de su inspiración surge de canciones que la transportan y la impulsan a crear.</p>
-				<br>	
-                </div>          
+        <!-- SEGUNDO EJEMPLO -->
+        <div class="contenedor-mixto">
+            <div class="texto-content">
+                <h3>Retoque Digital</h3>
+                <p>Ejercicio de retoque digital avanzado utilizando técnicas de composición y ajuste de color profesional.</p>
+            </div>
+            <div class="media-content">
+                <img src="img/TP4 Retoque digital - Robledo Ana.png" alt="retoque digital" class="img-agrandable">
+            </div>
+        </div>
+     
 
-            </article>		
-
-
-		<aside class="galeria galeria-ana">
-                
-              
-                    <h3>Galería de Trabajos</h3>
-                        <br>
-                
-                    <div>
-                    <h3>Póster DG</h3>
-                        <br>
-
-                        <img src="img/posterDG.png" alt="poster dg" height="300" width="200"
-                        class="img-agrandable">
-                    
-                        <br>
-                    </div>
-                        <br>
-                        <br>
-                        <br>
-
-                    <div>
-                    <h3>Retoque Digital</h3>
-                        <br>
-
-                        <img src="img/TP4 Retoque digital - Robledo Ana.png" alt="retoque digital" height="300" width="400"
-                        class="img-agrandable">
-                    
-                        <br>
-                    </div>
-                        <br>
-
-                    <br>
-                        <br>
-
-                    <div>
-                    <h3>Colorización</h3>
-                        br>
-
-                        <img src="img/Trabajo practico 3 -Ana colorizacion.png" alt="colorización" height="300" width="400"
-                        class="img-agrandable">
-                    
-                        <br>
-                    </div>
-                    <br>
-
-                    
-                    <div>
-                        <h3>Video edición</h3>
-                        <div>
-                            
-                            <p>Artiselfie</p>
-                            
-                            <hr>
-                            <!-- Miniatura y video-->
-                           <iframe width="560" height="315" src="https://www.youtube.com/embed/LSXpD73O0Xk?si=hCTM2e-jbNafqN6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                        </div>
-
-                        <div>
-                                                    
-                            <p>Experimento</p>
-                            <hr>
-                            <!-- Miniatura del video-->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/S5aq4Y0GmFY?si=cfrPJCBmSdsZkTYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-                        
-                    </div>
-
-            </aside>
-    </main>	
+        <!-- VIDEO CON TEXTO -->
+        <div class="contenedor-mixto">
+            <div class="texto-content">
+                <h3>Artiselfie - Video Edición</h3>
+                <p>Proyecto de video arte que explora la identidad digital y la autorepresentación en la era de las selfies.</p>
+            </div>
+            <div>
+                    <iframe width="512"  height="315" src="https://www.youtube.com/embed/LSXpD73O0Xk?si=hCTM2e-jbNafqN6k" 
+                            title="Artiselfie - Ana Robledo" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+        </div>
+    </aside>
+</main>
 				
 	<footer>
 			<hr>
@@ -146,14 +115,14 @@
 
 
             </div>
-		
-       <div id="modal" class="modal">
+
+                    <!-- Modal para la galería -->
+<div id="modal" class="modal">
   <span class="cerrar">&times;</span>
   <img class="modal-contenido" id="img01">
   <div id="pie"></div>
 </div>
-
-
+		
 	</body>
 </html>
 

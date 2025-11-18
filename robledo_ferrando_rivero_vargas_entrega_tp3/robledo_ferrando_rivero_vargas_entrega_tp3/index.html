@@ -40,111 +40,72 @@
         </nav>
             
 <main>
-			<article>
-<h2>Artistas: Ana Robledo, Pablo Ferrando, Lorena Rivero y Camilo Vargas</h2>
-<p>Este sitio web constituye el trabajo final grupal para la cátedra de Informática General del profesor José María Tirigall, 
-en la Universidad Nacional de las Artes (2025).<br>
-En esta página presentamos dos videojuegos desarrollados en C++ como proyectos colaborativos durante la cursada.<br>
-Además, el sitio incluye los portfolios individuales y una selección de obras de cada artista, tanto realizadas en el ámbito 
-académico como en producciones independientes.</p>
-                        <br>	
-                    <br>
-                    <br>
+    <div class="layout-index">
+        <div class="descripcion-grupo">
+            <h2>Artistas: Ana Robledo, Pablo Ferrando, Lorena Rivero y Camilo Vargas</h2>
+            <p>Este sitio web constituye el trabajo final grupal para la cátedra de Informática General del profesor José María Tirigall, 
+            en la Universidad Nacional de las Artes (2025).<br><br>
+            En esta página presentamos dos videojuegos desarrollados en C++ como proyectos colaborativos durante la cursada.<br><br>
+            Además, el sitio incluye los portfolios individuales y una selección de obras de cada artista, tanto realizadas en el ámbito 
+            académico como en producciones independientes.</p>
+        </div>
+        
+        <div class="media-content">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Xt7i6hiwp5E" 
+                        title="Aventura Intergaláctica" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
 
-    </article>		
-
-		<aside class="galeria galeria-grupo">
-
+    <aside class="galeria galeria-grupo">
+        <h3>Galería de Trabajos Grupales</h3>
+        
+        <!-- PRIMER VIDEOJUEGO -->
+        <div class="contenedor-mixto">
+            <div class="texto-content">
+                <h3>Una aventura conversacional</h3>
+                <p>El/la jugador/a encarna a un/a comandante intergaláctico/a en una misión por explorar el universo. 
+                Desde una consola de navegación, podrá visitar cuatro mundos únicos con mecánicas, estilos narrativos
+                y resultados diferentes en cada recorrido:</p>
+                <ul>
+                    <li>🛰️ Estación espacial Rocco Molopolk</li>
+                    <li>☢️ Planeta Tóxico</li>
+                    <li>🌀 Planeta Circia</li>
+                    <li>🛁 Planeta Trantor – SPA Galáctico Steampunk</li>
+                </ul>
+            </div>
+            <div>
+               
+                    <iframe width="512"  height="315"  r src="https://www.youtube.com/embed/Xt7i6hiwp5E" 
+                            title="Aventura Conversacional" 
+                            allowfullscreen>
+                    </iframe>
                 
-            <h3>Galería de Trabajos</h3>
-                    
-                    <br>
-                    <br>
-                    <br>
+            </div>
+        </div>
+
+        <!-- SEGUNDO VIDEOJUEGO -->
+        <div class="contenedor-mixto">
+            <div class="texto-content">
+                <h3>Un día como cualquiera</h3>
+                <p>🎯 <strong>Objetivo del juego:</strong> Sobrevive moviéndote por la ciudad, esquivando deudas y estatus negativos mientras recolectás premios para activar tu superpoder: ¡disparar!</p>
+                <p>🔫 Cada disparo que destruye una deuda suma 1 punto.<br>
+                🏆 Al llegar a 10 puntos, ganás la partida.</p>
+            </div>
+          
+                <div>
+                    <iframe width="512"  height="315"  src="https://www.youtube.com/embed/qyVK60GVmKc" 
+                            title="Un día como cualquiera" 
+                            allowfullscreen>
+                    </iframe>
                 
-                    <div>
-                        <hr>
-                        <h3>Una aventura conversacional</h3>
-                        <br>
-
-                        <p>El/la jugador/a encarna a un/a comandante intergaláctico/a en una misión por explorar el universo. 
-                        Desde una consola de navegación, podrá visitar cuatro mundos únicos con mecánicas, estilos narrativos
-                        y resultados diferentes en cada recorrido:
-                        <br>- 🛰️ Estación espacial Rocco Molopolk: Podés comprar naves, asistir a shows y beber Flacknar... pero cuidado con las consecuencias. 
-                        <br>- ☢️ Planeta Tóxico  : Mundo desértico, tenés que elegir transporte y refugio para sobrevivir al sol.
-                        <br>- 🌀 Planeta Circia  : Nada es lo que parece. Lo simbólico y lo real se mezclan. ¿Podés confiar en tus sentidos?
-                        <br>- 🛁 Planeta Trantor – SPA Galáctico Steampunk: Relax interestelar... si superás un cuestionario secreto.
-                        <br>Cada planeta ofrece decisiones interactivas, múltiples caminos y finales posibles.
-                        
-                        <br>## 🛠️ Tecnologías utilizadas: 
-                        <br>Lenguaje: **C++**
-                        <br>Entorno: GNU/Linux
-                        <br>Entrada/salida: `cin`, `cout`, arte ASCII 
-                        </p>                                 
-                        <div class="video">
-                                
-                                <!-- Miniatura y video-->
-                                <iframe width="1521" height="573" 
-                                    src="https://www.youtube.com/embed/Xt7i6hiwp5E" 
-                                    title="aventuraIntergalactica" frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" 
-                                    allowfullscreen>
-
-                                </iframe>
-                                <hr>
-                            </div>
-                        </div>
-
-
-                        <h3>Un día como cualquiera</h3>
-                        <br>
-
-                        <p>🎯 Objetivo del juego: Sobrevive moviéndote por la ciudad, esquivando deudas y estatus negativos mientras recolectás premios para activar tu superpoder: ¡disparar!
-                        <br>🔫 Cada disparo que destruye una deuda suma 1 punto.
-                        <br>🏆 Al llegar a 10 puntos, ganás la partida.
-                        <br>Controles:
-
-                        <br>Teclas de acción ← ↑ ↓ → Mover al personaje
-
-                        <br>Tecla espaciadora para disparar (una vez activado el premio)
-                        <br>ESC (tecla 27) Salir del juego
-                        <br>🧍‍♂️ Mecánicas del Jugador
-                        <br>Comenzás con 3 vidas y 10 unidades de energía.
-                        <br>Si una deuda (#DEUDAS) te golpea, perdés 1 vida.
-                        <br>Si tocás un estatus negativo (#ESTATUS), perdés energía.
-                        <br>Al tocar un premio (*), se activa el modo disparo.
-                        <br>Si perdés todas las vidas o energía, el juego termina.
-                        <br>💡 Condiciones de Fin: 
-                        <br>💀 Si tu energía o vidas llegan a 0 → GAME OVER.
-                        <br> 🎉 Si sumás 10 puntos disparando → ¡GANASTE!.
-                        <br>En caso de perder o ganar la consola pregunta si se quiere seguir jugando o salir (s/n) "s" para seguir jugando "n" para salir
-                        <br>📦 Estructura del proyecto
-                        <br>main.cpp → Lógica principal y bucle del juego.  
-                        <br>Jugador.h/.cpp → Control del jugador, movimiento, estado y disparos.  
-                        <br>Disparo.h/.cpp → Gestión de proyectiles.
-                        <br>Deuda.h/.cpp → Enemigos que restan vidas.
-                        <br>Estatus.h/.cpp → Enemigos que restan energía.
-                        <br>Mapa.h/.cpp → Renderizado y manejo del mapa ASCII.
-                        <br>Constantes.h → Configuraciones globales.
-                        </p>
-
-
-                <div class="video">
-                                <!-- Miniatura y video-->
-                                <iframe width="1521" height="573" src="https://www.youtube.com/embed/qyVK60GVmKc" 
-                                    title="unDiaComoCualquiera" 
-                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" 
-                                    allowfullscreen>
-                                </iframe>
-
-                                <hr>
-                            </div>
-            </aside>		    
-		
-		
-	</main>
+            </div>
+        </div>
+    </aside>
+</main>
         <hr>
         <hr>
 				
